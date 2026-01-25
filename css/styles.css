@@ -225,14 +225,18 @@ address {
   overflow: hidden;
 }
 
-.content-text {
+.features-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 72px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-.content-box {
-    width: calc((100% - 72px) / 4);
+.features-item {
+    /*width: calc((100% - 72px) / 4);*/
+    width: 100%;
 }
 
 .card-box {
