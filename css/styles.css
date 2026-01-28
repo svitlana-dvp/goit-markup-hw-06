@@ -167,7 +167,6 @@ address {
     .contacts {
         font-style: normal;
         display: block;
-        padding: 16px 0;
     }
 
     .contacts-list {
@@ -389,4 +388,91 @@ address {
     .mobile-menu {
     display: none;
     }
+}
+
+.zone {
+    max-width: 320px;
+    background-color: #2e2f42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office1.jpg);
+    padding: 188px 0;
+    margin: 0 auto;
+    padding: 72px 52px;
+}
+
+.zone-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.title-first {
+    font-weight: 700;
+    font-size: 36px; 
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 216px;
+} 
+
+.zone button {
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zone .link:hover,
+.zone .link:focus {
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .zone {
+    max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+.zone-wrapper {
+    margin-bottom: 36px;
+}
+
+.title-first {
+    font-weight: 700;
+    font-size: 56px; 
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+} 
+}
+
+@media screen and (min-width: 1158px) {
+    .zone {
+    max-width: 1440px;
+    padding: 188px 0;
+}
+
+.zone-wrapper {
+    margin-bottom: 48px;
+}
 }
