@@ -497,16 +497,16 @@ address {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-paragraf {
@@ -530,17 +530,51 @@ address {
 @media screen and (min-width: 768px) {
     .features-list {
         gap: 72px 24px;
-}
+    }
 
     .features-paragraf {
         text-align: start;
-} 
+    } 
 
     .features-item {
         width: calc((100% - 24px) / 2);
-}
+    }
 }
 
 @media screen and (min-width: 1158px) {
-    
+    .features {
+        padding: 120px 0;
+    }
+
+    .features-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+    }
+
+    .features-item {
+        width: calc((100% - 72px) / 4);   
+    }
+
+    .card-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background-color: #f4f4fd;
+    }
+
+    .features-paragraf {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .text {
+    font-weight: 400;
+    }
 }
